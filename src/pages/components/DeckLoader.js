@@ -21,7 +21,7 @@ function loadXmlFile(onLoad) {
         }))
       }));
 
-      onLoad(prevDecks => [...prevDecks, ...newDecks]); // append all decks
+      onLoad([...newDecks]); // append all decks
       console.log(newDecks)
     };
 
