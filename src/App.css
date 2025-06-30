@@ -128,7 +128,7 @@ button:hover {
   display: flex;
   justify-content: start;
   align-items: center;
-  font-size: large;
+  font-size: 0.8rem;
   font-weight: 400;
   background-color: lightgrey;
   border-radius: 4px;
