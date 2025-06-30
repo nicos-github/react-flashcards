@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './pages/Home';
+import Deck from './pages/Deck';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { DeckProvider } from "./pages/components/DeckContext";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+          <h1>Flashcards</h1>
+          <p>Practice using spaced repetition</p>
       </header>
+
+      <DeckProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Home/>}></Route>
+            <Route path='/deck/:id' element={<Deck/>}></Route>
+          </Routes>
+        </BrowserRouter>
+      </DeckProvider>
     </div>
   );
 }

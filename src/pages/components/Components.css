@@ -1,0 +1,18 @@
+.DeckButton {
+  width: 100%;
+}
+
+.DeckButtonSpan {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    gap: 32px;
+    font-weight: 600;
+    width: 100%;
+    
+}
+
+/* disable default link coloring */
+a {
+    all: unset
+}
