@@ -29,6 +29,10 @@ h1 {
   border-radius: 4px;
 }
 
+h1:hover {
+  cursor: pointer;
+}
+
 h2 {
   font-weight: 300;
 }
