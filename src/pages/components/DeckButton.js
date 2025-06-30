@@ -9,7 +9,7 @@ function DeckButton(props) {
             <NavLink to={`/deck/${props.id}`}>
                 <span class="DeckButtonSpan">
                     <label>🏷️ {props.name}</label>
-                    <label>🗂️ {props.count}</label>
+                    <label>{props.count} 🗂️</label>
                 </span>
             </NavLink>
         </button>

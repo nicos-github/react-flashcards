@@ -33,7 +33,7 @@ function Deck() {
     // Shuffle deck cards the first time the page loads
     useEffect(() => {
         if (filteredDeck) {
-            setShuffledCards(filteredDeck.cards);
+            setShuffledCards(shuffleArray(filteredDeck.cards));
             setIndex(0);
         }
     }, [filteredDeck]);

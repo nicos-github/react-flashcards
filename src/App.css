@@ -14,6 +14,19 @@ html {
   padding-top: 1rem;
 }
 
+@media (max-width: 768px) {
+  /* Your mobile-specific styles go here */
+  html {
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .App {
+    max-width: 90vw;
+  }
+}
+
+
 header {
   font-size: 1.2rem;
   color: black;
@@ -30,7 +43,7 @@ h1 {
 }
 
 h1:hover {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 h2 {
@@ -55,7 +68,7 @@ button {
 }
 
 button:hover {
-  cursor: pointer;
+  cursor: pointer !important;
   background-color: whitesmoke;
   border: 1px solid lavender;
   box-shadow: 0px 4px 4px #1111, 0px 4px 64px #1111, inset 0px 2px 16px #fff;
@@ -116,13 +129,14 @@ button:hover {
   justify-content: start;
   align-items: center;
   font-size: large;
-  background-color: dimgray;
+  font-weight: 400;
+  background-color: lightgrey;
   border-radius: 4px;
   padding: 0.5rem 1rem;
   color: transparent;
   min-height: 4rem;
   transform: rotateX(180deg);
-  transition: transform 0.3s ease-out, background-color 0.15s step-end, color 0.15s step-end;
+  transition: transform 0.3s ease-out, background-color 0.3s ease-in-out, color 0.13s ease-in;
 }
 
 .Answer:has(.show) {

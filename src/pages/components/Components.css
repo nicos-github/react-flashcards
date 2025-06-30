@@ -8,9 +8,23 @@
     font-size: 1.25rem;
     gap: 32px;
     font-weight: 600;
-    width: 100%;
-    
+    width: 100%;    
 }
+
+.DeckButtonSpan > label {
+  white-space: nowrap;     
+  overflow: hidden;        
+  text-overflow: ellipsis; 
+  font-size: clamp(12px, 2vw, 16px); 
+}
+
+/* For the last label inside DeckButtonSpan */
+.DeckButtonSpan > label:last-child {
+  white-space: nowrap;  
+  overflow: visible;    
+  text-overflow: unset; 
+}
+
 
 /* disable default link coloring */
 a {
