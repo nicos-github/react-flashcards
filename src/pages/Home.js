@@ -14,7 +14,7 @@ function Home() {
     return (
         <div class="Page">
             <h2>Decks</h2>
-            <p>A list of your learnings decks</p>
+            <p>A list of your learning decks to practice using spaced repetition.</p>
 
             <ul class="DeckList">
                 {decks.map(deck => (
